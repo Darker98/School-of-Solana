@@ -1,0 +1,22 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+timelock = "81eTCSx3zoUi8Q2ewTPJgfiJk32AR1mXnSTj6BJ5aKa"
+
+[programs.localnet]
+timelock = "81eTCSx3zoUi8Q2ewTPJgfiJk32AR1mXnSTj6BJ5aKa"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/ackee.json"
+
+[scripts]
+test = "vitest"
